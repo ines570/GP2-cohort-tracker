@@ -14,7 +14,7 @@ st.set_page_config(
     layout = 'wide'
 )
 
-df=pd.read_csv('Hackathon_cleaned_data.csv')
+df=pd.read_csv('hackathon_cleaned_data.csv')
 df['Total number of study participants'].fillna(df.Total, inplace=True)
 df['Date'] = pd.to_datetime(df['Date'])
 df_count_country = df.groupby('Country')['Study'].count()
