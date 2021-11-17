@@ -187,7 +187,7 @@ def main():
                     
                     
                 ########################  3rd row   #########################################
-                col_1, col_2, col_3, col_4, col_5, col_6 = st.columns([1.5,1,1,1,1,1.5])
+                col_1, col_2, col_3, col_4, col_5, col_6 = st.beta_columns([1.5,1,1,1,1,1.5])
                 
                 
                 with col_1:
