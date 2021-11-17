@@ -23,7 +23,7 @@ countries = df['Territory'].unique()
 
 ####################### HEAD ##############################################
 
-head_1, head_2, title, head_3, head_4 = st.columns([1.2,1.2,4,1,1])
+head_1, head_2, title, head_3, head_4 = st.beta_columns([1.2,1.2,4,1,1])
 mjff = Image.open('mgff_logo.png')
 head_1.image(mjff, width = 100)
 gp2 = Image.open('gp2_logo.png')
