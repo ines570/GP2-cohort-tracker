@@ -123,7 +123,7 @@ def main():
                 
                 
                 ########################  1st row   #########################################
-                world, europe, asia, na, sa, blank = st.columns([1,1,1.2,1.2,1.2,3])
+                world, europe, asia, na, sa, blank = st.beta_columns([1,1,1.2,1.2,1.2,3])
 
                 df_map = df
                 WORLD = world.button('WORLD')
@@ -152,7 +152,7 @@ def main():
                        df_map = df.loc[df['Continent'] == 'South America']
                     
                 ########################  2nd row   #########################################
-                left_column, right_column = st.columns([2.5,1])
+                left_column, right_column = st.beta_columns([2.5,1])
                 with right_column:
                     df_selected_update = df_selected[['Short_Name','Proposed_Samples_by2022', 'Processed_Samples']]
                     df_selected_update['Processed_Samples'] = df_selected_update['Processed_Samples'].astype(str).apply(lambda x: x.replace('.0',''))
