@@ -105,7 +105,7 @@ def main():
 
                 if len(countries_selected) > 0:
 
-                    df_cf = df.loc[df['Main_Site'].isin(countries_selected)]
+                    df_cf = df.loc[df['Location'].isin(countries_selected)]
                 else:
                     df_cf = df
 
