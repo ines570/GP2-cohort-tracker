@@ -1,5 +1,5 @@
 Timestamp,Short_Name,Full_Name,Multisite_Study,Territory,Continent,Location,City,Current_Total,Current_PD,Current_nonPD,Proposed_Samples_by2022,Processed_Samples,Participant_type,Study_type,Cohort_completion_Year,"Notes (too much cleaning, missing info, something)",COLUMN,VALUE,DESCRIPTION
-2/9/21,BCM,Baylor College of Medicine,,USA,North America,Texas,Houston,759,513,246,808,781,PD cases and controls,,,Need to correct I to K numbers (to use numbers from form),,,
+2/9/21,BCM,Baylor College of Medicine,,USA,North America,Texas,Houston,759,513,246,808,781,PD cases and controls,,9999,Need to correct I to K numbers (to use numbers from form),,,
 4/12/20 11:02,CALYPSO,Cardiff Based Study of Later and Younger Onset Parkinson's,No,UK,Europe,Wales,Cardiff,600,400,200,600,,PD cases and controls,"Cross-sectional: one assessment only, with no further contact",2009,V1 starts here,TOTAL_SAMPLES,0,Total number of samples proposed (could change this to processed instead)?
 5/15/20 2:41,PFP,Parkinson's Families Project,Yes,UK,Europe,England,,1000,850,150,2500,,PD cases and controls,"Cross-sectional: one assessment only, with no further contact",9999,,LAST_UPDATED,9/23/21,Date the visualization was last updated
 5/22/20 13:19,MD-GAP,Movement Disorders Genomics and Phenotypes,Yes,UK,Europe,England,,3500,2000,1500,3700,,PD cases and controls,Longitudinal (retrospective),9999,,,,
