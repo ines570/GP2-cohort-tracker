@@ -16,6 +16,8 @@ st.set_page_config(
 
 df=pd.read_csv('Data Curation - OCT 2021 - CLEANED_DATA.csv')
 df['Current_Total'].fillna(df.Current_Total, inplace=True)
+df[['Current_Total','Current_PD','Current_nonPD','Processed_Samples']] = df[['Current_Total','Current_PD','Current_nonPD','Processed_Samples']].fillna(0)
+df.loc[:, df.dtypes == np.float64] = df.loc[:, df.dtypes == np.float64].astype(int)
 df_count_country = df.groupby('Territory')['Short_Name'].count()
 df['Timestamp'] = pd.to_datetime(df['Timestamp'],format='%m/%d/%Y', errors='ignore')
 countries = df['Territory'].unique()
@@ -105,7 +107,7 @@ def main():
 
                 if len(countries_selected) > 0:
 
-                    df_cf = df.loc[df['Location'].isin(countries_selected)]
+                    df_cf = df.loc[df['Territory'].isin(countries_selected)]
                 else:
                     df_cf = df
 
@@ -189,6 +191,7 @@ def main():
                 ########################  3rd row   #########################################
                 col_1, col_2, col_3, col_4, col_5, col_6 = st.beta_columns([1.5,1,1,1,1,1.5])
                 
+                df_selected.loc[:, df_selected.dtypes == np.object] = df_selected.loc[:, df_selected.dtypes == np.object].fillna('N/A')
                 
                 with col_1:
                     st.markdown("**Study Name**")
